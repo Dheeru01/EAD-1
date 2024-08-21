@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <h1>Login</h1>
+            <form class="form-data">
+                <div class="data">
+                    <label for="name">STUDENT NAME</label>
+                <input type="text" placeholder="enter your name" name="StudentName" id="student_name">
+
+                <label for="rollno">ROLL NO</label>
+                <input type="number" placeholder="enter your roll no" name="RollNo" id="roll_no">
+
+                <label for="password">PASSWORD</label>
+                <input type="password" placeholder="Enter your password" name="Password" id="password">
+                </div>
+                
+                <button type="submit" onclick="getVerified()">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+<script src="./index.js"></script>
+</html>
