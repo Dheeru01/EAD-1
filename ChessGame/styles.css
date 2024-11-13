@@ -1,0 +1,38 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    margin: 0 auto;
+}
+
+.square {
+    width: 60px;
+    height: 60px;
+}
+
+.square.black {
+    background-color: #769656;
+}
+
+.square.white {
+    background-color: #eeeed2;
+}
+
+.piece {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.piece.white {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0f/Chess_plt60.svg'); /* Placeholder for white piece */
+}
+
+.piece.black {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/60/Chess_pdt60.svg'); /* Placeholder for black piece */
+}
