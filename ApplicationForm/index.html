@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Application Form</h1>
+        <form id="application-form" action="/submit-application" method="POST">
+            <label for="full-name">Full Name:</label>
+            <input id="full-name" type="text" name="fullname" placeholder="Enter your full name" required>
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input id="phone" type="tel" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" placeholder="Enter your address" rows="3" required></textarea>
+
+            <label for="dob">Date of Birth:</label>
+            <input id="dob" type="date" name="dob" required>
+
+            <label for="position">Position Applied For:</label>
+            <input id="position" type="text" name="position" placeholder="Enter the position" required>
+
+            <label for="resume">Upload Resume:</label>
+            <input id="resume" type="file" name="resume" accept=".pdf,.doc,.docx" required>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
